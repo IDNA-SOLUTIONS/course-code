@@ -1,0 +1,20 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main   # only run on pushes to main branch (optional)
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a string
+        run: echo "hello world"
+
+      - name: Check Node and NPM versions
+        run: |
+          node -v
+          npm -v
+
+
