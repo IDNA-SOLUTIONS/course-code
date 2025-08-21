@@ -31,5 +31,5 @@ jobs:
         run: Write-Output "Windows String"
 
       - name: Error Step (optional)
-        run: doesnotexitss
+        run: doesnotexits
         continue-on-error: true   # <-- prevents workflow failure
